@@ -1,0 +1,18 @@
+html{
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	font-family: Lato, serif;
+}
+body{
+	width: 855px;
+	margin: 0 auto;
+}
+header, main{
+	border-bottom: 2px solid black;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 285px 570px;
+}
