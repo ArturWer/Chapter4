@@ -1,12 +1,14 @@
 html{
 	margin: 0;
 	padding: 0;
-	font-size: 1.2em;
-	font-family: Lato, serif;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 1.8em;
 }
 body{
 	width: 1200px;
 	margin: 0 auto;
+	line-height: 2em;
 }
 header, main{
 	border-bottom: 2px solid black;
@@ -14,7 +16,46 @@ header, main{
 h1{
 	letter-spacing: 5px;
 }
+p{
+	margin-top: .3rem;
+}
+h2{
+	margin: 0;
+}
 .container{
 	display: grid;
 	grid-template-columns: 400px 800px;
 }
+header p{
+	font-style: italic;
+}
+header h1, header p{
+	margin: 0;
+	padding: 4px;
+}
+main{
+	margin-top: 2rem;
+}
+input{
+	width: 20rem;
+	font-size: 1rem;
+}
+button{
+	height: 1.7rem;
+	color: white;
+	background: purple;
+	border-radius: .2rem;
+	font-size: 1rem;
+	font-style: bold;
+}
+.comments p{
+	border-radius: 5px;
+	padding: 2px;
+}
+.comments p:nth-child(odd){
+	background: gainsboro;
+}
+.comments p:nth-child(even){
+	background: lavender;
+}
+

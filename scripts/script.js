@@ -1,1 +1,1 @@
-'use strikt';
+'use striсt';
