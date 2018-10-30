@@ -9,6 +9,7 @@ let main = function (event) {
 			newP.appendChild(newContent);
 			let commentsSection = document.querySelector(".comments");
 			commentsSection.appendChild(newP);
+			document.querySelector(".comment-input input").value = "";
 		};
 		
 
