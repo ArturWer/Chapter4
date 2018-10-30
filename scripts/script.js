@@ -9,6 +9,19 @@ let main = function (event) {
 		let newContent = document.createTextNode(userComment);
 		newP.appendChild(newContent);
 		let commentsSection = document.querySelector(".comments");
+		//adding showing new element
+		newP.style.opacity = "0";
+		let i = 1; 
+		let intervalId = setInterval (function(){
+				newP.style.opacity = `${0.1*i}`;
+				i++;
+				if (i >= 10) {
+					clearInterval(intervalId);
+					console.log("clear Interval");
+				};
+			}, 100);
+
+		
 		commentsSection.appendChild(newP);
 		userInput.value = "";
 	};
