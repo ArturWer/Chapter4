@@ -72,9 +72,27 @@ function stringArrayCheck (strArray, string){
 			isEqual = true;
 	});
 	result = (isEqual) ? true : false;
-	console.log(result);
+	console.log(`Array contains the word \"${string}\" one time  ${result}`);
 	return result;
 };
 stringArrayCheck(strArray, "milk");
 stringArrayCheck(strArray, "pigeon");
 stringArrayCheck(strArray, "monkey");
+
+/* array strings 2nd exercise*/
+strArray = ['water', 'food', 'milk', 'letter', 'monkey', 'food', 'milk', 'letter', 'monkey', 'food'];
+function stringArrayCheckDouble (strArray, string){
+	let isEqual = 0,
+		result;
+	strArray.forEach(function(value){
+		if (string === value) 
+			isEqual ++;
+	});
+	result = (isEqual == 2) ? true : false;
+	console.log(`Array 2 times contains the word \"${string}\" ${result}`);
+	return result;
+};
+stringArrayCheckDouble(strArray, "milk");
+stringArrayCheckDouble(strArray, "pigeon");
+stringArrayCheckDouble(strArray, "food");
+stringArrayCheckDouble(strArray, "water");
