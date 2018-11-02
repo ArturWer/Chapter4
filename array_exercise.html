@@ -23,6 +23,17 @@
 			return arraySum(array)/array.length;
 		}
 		console.log(`average number is: ${averageNumber(arrayNum)}`);
+		/* max number */
+		function maxNumber (array){
+			let max = 0;
+			array.forEach(function(val){
+				if (val>max) {
+					max = val;
+				}
+			});
+			return max;
+		}
+		console.log(`max number is: ${maxNumber(arrayNum)}`);
 	</script>
 </body>
 </html>
