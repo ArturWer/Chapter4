@@ -61,3 +61,20 @@ function everyEvenNumber (array){
 	return everyEven;
 }
 everyEvenNumber(arrayNum);
+
+/* array strings */
+let strArray = ['food', 'milk', 'letter', 'monkey'];
+function stringArrayCheck (strArray, string){
+	let isEqual,
+		result;
+	strArray.forEach(function(value){
+		if (string === value) 
+			isEqual = true;
+	});
+	result = (isEqual) ? true : false;
+	console.log(result);
+	return result;
+};
+stringArrayCheck(strArray, "milk");
+stringArrayCheck(strArray, "pigeon");
+stringArrayCheck(strArray, "monkey");
