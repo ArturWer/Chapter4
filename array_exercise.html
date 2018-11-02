@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Array</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<h1>Array</h1>
+	</header>
+	<script>
+		let arrayNum = [3,4,2,12,4234,334,7,3,55,4554,3677,8,4,45,4767,978];
+		function arraySum(array){
+			let sum = 0;
+			for (var i = array.length - 1; i >= 0; i--) {
+				sum+=array[i];
+			}
+			return sum;
+		}
+		console.log(`A sum of the array numbers is: ${arraySum(arrayNum)}`);
+	</script>
+</body>
+</html>
