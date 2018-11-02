@@ -34,6 +34,21 @@
 			return max;
 		}
 		console.log(`max number is: ${maxNumber(arrayNum)}`);
+		/* odd number */
+		function oddNumber (array){
+			let hasOdd = false;
+			array.forEach(function(val){
+				if(hasOdd!==true){
+					if (val%2 ===1) {
+						console.log(`The array has odd numbers`);
+						hasOdd = true;
+					}
+				}
+			});
+			return hasOdd;
+		}
+		oddNumber(arrayNum);
+		
 	</script>
 </body>
 </html>
