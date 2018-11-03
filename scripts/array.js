@@ -96,3 +96,20 @@ stringArrayCheckDouble(strArray, "milk");
 stringArrayCheckDouble(strArray, "pigeon");
 stringArrayCheckDouble(strArray, "food");
 stringArrayCheckDouble(strArray, "water");
+
+/* array strings n-times exercise*/
+function arrayContainsNTimes (array, string, nTimes){
+	let count = 0;
+	array.forEach(function(value){
+		if (value === string) {
+			count++;
+		}
+	});
+	if (count >= nTimes) {
+		return true;
+	} else return false;
+}
+arrayContainsNTimes(strArray, "letter", 2);
+arrayContainsNTimes(strArray, "letter", 3);
+arrayContainsNTimes(strArray, "letter", 4);
+arrayContainsNTimes(strArray, "letter", 5);
