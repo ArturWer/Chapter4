@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 let arrayNum = [3,4,2,12,4234,334,7,3,55,4554,3677,8,4,45,4767,978];
 
 /* sum array */
